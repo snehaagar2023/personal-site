@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneha Agarwal — AI/ML Engineer</title>
+  <meta name="description" content="Sneha Agarwal — CS at UCLA. AI/ML engineer working on small language models, agentic systems, and NLP." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Nunito:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- blue night sky with stars -->
+  <div class="sky" aria-hidden="true"><div class="stars"></div><div class="stars far"></div></div>
+  <div class="paper" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#" class="logo" aria-label="Sneha Agarwal, back to top">
+      <!-- small neural network: 2 inputs → 3 hidden → 1 output -->
+      <svg viewBox="0 0 40 32" width="40" height="32" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1.3" opacity="0.55">
+          <line x1="6" y1="10" x2="20" y2="5"/><line x1="6" y1="10" x2="20" y2="16"/><line x1="6" y1="10" x2="20" y2="27"/>
+          <line x1="6" y1="22" x2="20" y2="5"/><line x1="6" y1="22" x2="20" y2="16"/><line x1="6" y1="22" x2="20" y2="27"/>
+          <line x1="20" y1="5" x2="34" y2="16"/><line x1="20" y1="16" x2="34" y2="16"/><line x1="20" y1="27" x2="34" y2="16"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="6" cy="10" r="3"/><circle cx="6" cy="22" r="3"/>
+          <circle cx="20" cy="5" r="3"/><circle cx="20" cy="16" r="3"/><circle cx="20" cy="27" r="3"/>
+          <circle cx="34" cy="16" r="3.5"/>
+        </g>
+      </svg>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#involvement">Leadership</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+
+      <h1>Sneha <em>Agarwal</em></h1>
+      <p class="lead">
+        I'm a Computer Science student at <strong>UCLA</strong> (B.S. '27, M.S. '28) focused on
+        <strong>AI/ML</strong>: small language models, agentic systems, and NLP.
+      </p>
+      <p class="previously">Previously at <strong>Adobe</strong> · <strong>Apple</strong> · <strong>Juniper Networks</strong></p>
+      <div class="hero-links">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="resume.pdf" target="_blank">Resume</a>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about">
+      <h3 class="section-title">About</h3>
+      <div class="about-grid">
+        <div>
+          <!-- ✏️ CUSTOMIZE: rewrite in your own voice -->
+          <p>
+            I'm finishing my B.S. in Computer Science with a minor in Data Science Engineering at
+            UCLA (3.92 GPA, Dean's Honor List), and I'll continue there for my M.S. in Computer Science.
+          </p>
+          <p>
+            Most of my work is about making language models faster, cheaper, and more reliable.
+            I've built SLM routers, distillation pipelines, and RAG systems, and in research I study
+            why agents fail at coding and terminal tasks. Outside of class I direct external events
+            for <strong>Bruin AI</strong> and lead ML projects at <strong>Data Science Union</strong>.
+          </p>
+          <p class="small-label">Skills &amp; tools</p>
+          <div class="filters" id="skill-filters"></div>
+          <ul class="skills" id="skills"></ul>
+        </div>
+        <!-- ✏️ CUSTOMIZE: replace me.jpg to change your photo -->
+        <div class="photo">
+          <img src="me.jpg" alt="Photo of Sneha Agarwal" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE (filled from script.js) ========== -->
+    <section id="experience">
+      <h3 class="section-title">Experience</h3>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- ========== LEADERSHIP & INVOLVEMENT (filled from script.js) ========== -->
+    <section id="involvement">
+      <h3 class="section-title">Leadership <em>&amp;</em> Involvement</h3>
+      <div class="club-grid" id="clubs"></div>
+    </section>
+
+    <!-- ========== PROJECTS (filled from script.js) ========== -->
+    <section id="projects">
+      <h3 class="section-title">Projects</h3>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact">
+      <h3 class="section-title center">Contact</h3>
+      <div class="contact-links">
+        <a class="social" href="https://github.com/snehaagar2023?tab=repositories" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          GitHub
+        </a>
+        <a class="social" href="https://www.linkedin.com/in/snehaagar/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          LinkedIn
+        </a>
+        <a class="social" href="mailto:snehaagar@ucla.edu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5.5h18v13H3z M3.5 6l8.5 7 8.5-7"/></svg>
+          snehaagar@ucla.edu
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Sneha Agarwal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
