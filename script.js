@@ -104,7 +104,7 @@ const experience = [
   {
     role: "Software Engineer Intern",
     org: "Apple",
-    team: "Weather Forecasting and Modeling Team · Info Apps",
+    team: "Weather Forecasting Team · Info Apps",
     date: "Jun 2025 – Sep 2025 · Cambridge, MA",
     points: [
       "Researched and integrated text data from <strong>severe weather alerts</strong> and <strong>meteorologist reports</strong> into an end-to-end <strong>NLP and anomaly-detection pipeline</strong> to identify notable weather conditions.",
