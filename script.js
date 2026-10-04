@@ -64,7 +64,7 @@ const projects = [
     description: "A full-stack web app prototype that helps college students find affordable, safe transportation. Integrated the Google Maps API for dynamic route rendering and distance calculation, and built the login and ride-posting flows with a MongoDB backend schema.",
     tags: ["React", "Node.js", "Express", "MongoDB", "Google Maps API"],
     image: "",
-    github: "",
+    github: "https://github.com/suhanishukla/hopon",
     live: "",
   },
   {
@@ -81,12 +81,13 @@ const experience = [
   {
     role: "Machine Learning Engineer Intern",
     org: "Adobe",
+    team: "Acrobat AI Assistant Team · Document Cloud AI",
     date: "Jun 2026 – Sep 2026 · San Jose, CA",
     points: [
-      "Built, fine-tuned, and deployed a prompt-tunable <strong>fast-path SLM router</strong> for the <strong>Acrobat AI Assistant</strong> agentic harness using <strong>Axolotl</strong>, <strong>AWS SageMaker</strong>, and <strong>vLLM</strong>, routing simple queries directly to specialized agents instead of through the full agentic pipeline.",
+      "Built, fine-tuned, and deployed a prompt-tunable <strong>fast-path SLM router</strong> for the <strong>Acrobat AI Assistant</strong> agentic harness using <strong>Axolotl</strong>, <strong>AWS SageMaker</strong>, and <strong>vLLM</strong>, routing simple queries directly to specialized agents to improve latency.",
       "Benchmarked and trained multiple SLMs, ultimately deploying <strong>Qwen3-1.7B</strong>, which reduced routing latency by <strong>80%</strong>, improved recall by <strong>21%</strong>, and cut misroutes by <strong>58%</strong>.",
+      "Generated training data with <strong>varied system prompts</strong> across diverse agent rosters and output schemas, and <strong>simulated multi-turn user conversations</strong>, so the model adapts to changing <strong>routing policies without regenerating data or retraining</strong>.",
       "Developed a reusable <strong>model-distillation and SLM training framework</strong> with automated synthetic-data generation and evaluation using <strong>NVIDIA Data Designer</strong>, enabling scalable training for future SLM use cases.",
-      "Trained across diverse agent rosters and output schemas so <strong>routing policies can change without regenerating data or retraining the model</strong>.",
     ],
   },
   {
@@ -95,30 +96,31 @@ const experience = [
     link: "https://saadiagabriel.com/mars_lab.html",
     date: "May 2026 – Present · Los Angeles, CA",
     points: [
-      "Analyze <strong>small language model (SLM) agent trajectories</strong> across <strong>SWE-ZERO</strong>, <strong>Endless Terminals</strong>, and <strong>Terminal-Bench</strong> to identify where and why agents fail on coding and terminal tasks.",
-      "Built <strong>heuristic and LLM-as-judge evaluation pipelines</strong> to label failures at scale.",
-      "Developed a <strong>failure-mode taxonomy and labeling rubric</strong> that informs dataset design and training recommendations for more reliable agentic SLMs.",
+      "Analyze <strong>SLM agentic reasoning trajectories</strong> on <strong>SWE-ZERO</strong>, <strong>Endless Terminals</strong>, and <strong>Terminal-Bench 2</strong>, comparing models like <strong>Llama-3.2-3B</strong> and <strong>o3</strong>, to find why agents fail on coding and terminal tasks.",
+      "Built <strong>heuristic and LLM-as-judge pipelines</strong> to score trajectories on progress, error recovery, looping, and verification.",
+      "Developing a <strong>failure-mode taxonomy and labeling rubric</strong> to guide better datasets and training for agentic SLMs.",
     ],
   },
   {
     role: "Software Engineer Intern",
     org: "Apple",
+    team: "Weather Forecasting and Modeling Team · Info Apps",
     date: "Jun 2025 – Sep 2025 · Cambridge, MA",
     points: [
-      "Researched and integrated diverse text data sources into an end-to-end <strong>NLP and anomaly-detection pipeline</strong> to identify notable weather conditions.",
-      "Processed large-scale datasets with <strong>Dask</strong> and <strong>AWS</strong> infrastructure for scalable data processing and model training.",
+      "Researched and integrated text data from <strong>severe weather alerts</strong> and <strong>meteorologist reports</strong> into an end-to-end <strong>NLP and anomaly-detection pipeline</strong> to identify notable weather conditions.",
       "Experimented with <strong>BERT</strong>, <strong>Sentence Transformers</strong>, <strong>named-entity recognition (NER)</strong>, and <strong>LLM-based extraction</strong> to pull insights from free-form text.",
+      "Processed large-scale datasets with <strong>Dask</strong> and <strong>AWS</strong> infrastructure for scalable data processing and model training.",
       "Trained an <strong>XGBoost</strong> severe-weather classifier achieving <strong>90%+ accuracy</strong>, and used feature engineering and <strong>SHAP analysis</strong> to identify the key weather features and thresholds behind its predictions.",
     ],
   },
   {
     role: "Software Engineer Intern",
     org: "Juniper Networks",
+    team: "Generative AI Team · Core Engineering",
     date: "Jun 2024 – Sep 2024 · Sunnyvale, CA",
     points: [
-      "Automated the creation of code-review training data with <strong>Python</strong> scripting, and generated synthetic Q&A data from product documentation using <strong>LangChain</strong> chunking and API integration.",
-      "Fine-tuned <strong>Llama 3</strong> with <strong>LoRA</strong> on this data, achieving <strong>95% accuracy</strong> on code reviews and Q&A.",
-      "Designed and implemented a <strong>prompt-chaining pipeline</strong> to customize the model to the team's coding guidelines.",
+      "Automated the creation of code-review training data with <strong>Python</strong> and generated synthetic Q&A data from product documentation using <strong>LangChain</strong>, then fine-tuned <strong>Llama 3</strong> with <strong>LoRA</strong> on it, achieving <strong>95% accuracy</strong> on code reviews and Q&A.",
+      "Designed and implemented a <strong>prompt-chaining pipeline</strong> to customize the model for coding guidelines.",
       "Built an <strong>LLM routing engine</strong> that directs user queries by intent to the right backend: LLM chat, natural-language-to-SQL queries, or a <strong>RAG</strong> vector database.",
     ],
   },
@@ -137,7 +139,7 @@ const clubs = [
     ],
     points: [
       "Led the <strong>first quarter of learning assistants</strong> for CS 162, developing curriculum including worksheets, coding demos, and review sessions on NLP course content.",
-      "Developed worksheets, coding demos, and review sessions for CS 33 students.",
+      "Led <strong>discussion sections</strong> for CS 33, reinforcing course concepts, guiding students through projects, and preparing them for exams.",
     ],
   },
   {
@@ -148,8 +150,8 @@ const clubs = [
       { title: "Director of External Events", date: "2025 – 2026" },
     ],
     points: [
-      "Built <strong>AI-powered vendor intelligence tools</strong>: spend dashboards, purchase search, and document comparison.",
-      "Led external programming for <strong>400+ attendee</strong> events: speaker panels, workshops, and mentorship.",
+      "Built an <strong>AI-powered vendor intelligence platform</strong> for UCLA: a <strong>React</strong> dashboard of spend metrics and purchase records with a <strong>RAG chat agent</strong> that answers through keyword analytics, retrieval lookups, or deep corpus-wide analysis.",
+      "Led external programming for <strong>400+ attendee</strong> events, including <strong>company info sessions</strong>, <strong>collaborations with other clubs</strong>, and the <strong>Generative AI Summit</strong> in partnership with <strong>AWS</strong> (industry panels, technical AI workshops, a research panel, a hackathon, and a pitch competition).",
     ],
   },
   {
@@ -168,6 +170,7 @@ const clubs = [
     roles: [{ title: "Tech Director", date: "2023 – Present" }],
     points: [
       "Directed a team of <strong>12</strong> to run a full-day Python library event with hands-on projects: web scraping with <strong>Beautiful Soup</strong> and <strong>Selenium</strong>, and object detection and facial recognition with <strong>OpenCV</strong>.",
+      "Directed a multi-week <strong>full-stack Swift workshop</strong> covering databases, backend integration, user authentication, and <strong>SwiftUI</strong>.",
       "Develop and maintain the Hack and HOTH websites with <strong>React.js</strong>, <strong>Material UI</strong>, and <strong>Gatsby</strong>, improving responsiveness, navigation, and user engagement.",
     ],
   },
@@ -179,7 +182,7 @@ const clubs = [
       { title: "Internal Board Treasurer", date: "2024 – 2025" },
     ],
     points: [
-      "Elected <strong>Chief Financial Director</strong> to manage finances and yearly expenses for all <strong>8 SWE committees</strong>.",
+      "Elected <strong>Internal Board Treasurer</strong> to manage finances and yearly expenses for all <strong>8 SWE committees</strong>.",
       "Spearheaded fundraising and company-sponsored scholarships by collaborating with local businesses and the UCLA Finance Office.",
       "Organized outreach events for <strong>200+ high school students</strong>, including career-planning panels and technical workshops.",
     ],
@@ -244,6 +247,7 @@ $("timeline").innerHTML = experience
     (x) => `
     <li>
       <h4>${x.role} <span>@ ${x.link ? `<a href="${x.link}" target="_blank" rel="noopener">${x.org} ↗</a>` : x.org}</span></h4>
+      ${x.team ? `<p class="team">${x.team}</p>` : ""}
       <p class="mono date">${x.date}</p>
       <ul>${x.points.map((pt) => `<li>${pt}</li>`).join("")}</ul>
     </li>`

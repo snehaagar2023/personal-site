@@ -59,7 +59,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
   background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
   transition: background 0.4s;
 }
-.stars { /* layer is one tile bigger than the screen and slides by one tile, so the loop is seamless */
+.stars { z-index: 1; /* layer is one tile bigger than the screen and slides by one tile, so the loop is seamless */
   position: absolute; top: -640px; left: -640px; right: 0; bottom: 0;
   opacity: var(--star-opacity); transition: opacity 0.4s;
   animation: drift-near 140s linear infinite, twinkle 6s ease-in-out infinite alternate;
@@ -150,8 +150,6 @@ section { padding: 5.5rem 0; }
 .lead strong { font-weight: 700; }
 [data-theme="dark"] 
 
-.previously { margin: -1rem 0 2rem; font-size: 0.95rem; color: var(--muted); }
-.previously strong { color: var(--text); font-weight: 700; }
 .hero-links { display: flex; gap: 0.9rem; flex-wrap: wrap; }
 .btn {
   display: inline-block; padding: 0.8rem 1.6rem; border-radius: 999px;
@@ -252,6 +250,7 @@ section { padding: 5.5rem 0; }
 .timeline h4 { font-size: 1.1rem; font-weight: 800; }
 .timeline h4 span { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--accent); }
 .timeline h4 a:hover { text-decoration: underline; }
+.timeline .team { font-size: 0.97rem; font-weight: 700; color: var(--skill-swe); margin: 0.2rem 0 0.1rem; }
 .timeline .date { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
 .timeline ul { margin-top: 0.5rem; padding-left: 1.1rem; color: var(--muted); font-size: 0.96rem; }
 .timeline ul strong { color: var(--text); font-weight: 700; }
