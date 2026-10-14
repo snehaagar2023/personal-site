@@ -84,10 +84,10 @@ const experience = [
     team: "Acrobat AI Assistant Team · Document Cloud AI",
     date: "Jun 2026 – Sep 2026 · San Jose, CA",
     points: [
-      "Built, fine-tuned, and deployed a prompt-tunable <strong>fast-path SLM router</strong> for the <strong>Acrobat AI Assistant</strong> agentic harness using <strong>Axolotl</strong>, <strong>AWS SageMaker</strong>, and <strong>vLLM</strong>, routing simple queries directly to specialized agents to improve latency.",
+      "Built, fine-tuned, and deployed a <strong>prompt-tunable fast-path SLM router</strong> for the <strong>Acrobat AI Assistant</strong> agentic harness using <strong>Axolotl</strong>, <strong>AWS</strong>, and <strong>vLLM</strong>, routing simple queries directly to specialized agents to improve latency.",
       "Benchmarked and trained multiple SLMs, ultimately deploying <strong>Qwen3-1.7B</strong>, which reduced routing latency by <strong>80%</strong>, improved recall by <strong>21%</strong>, and cut misroutes by <strong>58%</strong>.",
       "Generated training data with <strong>varied system prompts</strong> across diverse agent rosters and output schemas, and <strong>simulated multi-turn user conversations</strong>, so the model adapts to changing <strong>routing policies without regenerating data or retraining</strong>.",
-      "Developed a reusable <strong>model-distillation and SLM training framework</strong> with automated synthetic-data generation and evaluation using <strong>NVIDIA Data Designer</strong>, enabling scalable training for future SLM use cases.",
+      "Developed a reusable <strong>model-distillation and SLM training pipeline</strong> with automated synthetic-data generation and evaluation using <strong>NVIDIA Data Designer</strong>, enabling scalable training for future prompt tunable SLM use cases.",
     ],
   },
   {
