@@ -138,7 +138,7 @@ const clubs = [
       { title: "Learning Assistant, CS 33 (Computer Organization)", date: "" },
     ],
     points: [
-      "Led the <strong>first quarter of learning assistants</strong> for CS 162, developing curriculum including worksheets, coding demos, and review sessions on NLP course content.",
+      "Led discussions as the <strong>first quarter of learning assistants</strong> for CS 162, developing curriculum including worksheets, coding demos, and review sessions on NLP course content.",
       "Led <strong>discussion sections</strong> for CS 33, reinforcing course concepts, guiding students through projects, and preparing them for exams.",
     ],
   },
